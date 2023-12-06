@@ -1,3 +1,5 @@
 # CQ8
 Staircase: Time complexity- O(n^2) there is a initial for loop that runs for the size of n, and within that for loop there are two separate for loops that run some fraction of n, which makes it n(n/c + n/c) which is O(n^2)
 Space complexity: This program uses three for loops which makes the space constant because there will only ever be 3 for loops O(1)
+
+Alternating characters: Recursive definition- This program uses an index value in order to not have to copy over a string again and again. The base case for this program is when the index pointer is at the last character in the string. This means that the string is effectively just one character, in this case there cannot be a repeating character, so it returns 0. When the pointer is not at the last character it checks if the character to the right of the pointer index is equal to the current character index. If it is equal then it return 1 + a recursive call where we move the pointer to the right by 1. If the right character is not equal, then it returns 0 + a recursive call.
